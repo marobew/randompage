@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>random test</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <br><br>
+  <h1 class="display-4">랜덤 추첨 페이지</h1>
+  <br>
+  <p class="lead">추첨 페이지입니당 부스 와줘서 감사 기프티콘 고고</p>
+</div>
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+
+    </div>
+    <div class="card mb-4 shadow-sm">
+
+      <div class="card-body">
+      <form action="{%url 'count'%}">
+        <p>이름 : <textarea cols="20" rows="1" name="fulltext"></textarea></p>
+        <p>추첨수 : <textarea cols="20" rows="1" name="count"></textarea></p>
+        <input type="submit" value="Get Started!">
+      </form>
+      </div>
+    </div>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; LikeLion at SYU</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" target="_blank" href="https://www.facebook.com/likelionsahmyook/">페이스북</a></li>
+          <li><a class="text-muted" target="_blank" href="http://sahmyook.likelion.org/">홈페이지</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>7기 운영진</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">오지수</a></li>
+          <li><a class="text-muted" href="#">배성현</a></li>
+          <li><a class="text-muted" href="#">김준형</a></li>
+          <li><a class="text-muted" href="#">위보람</a></li>
+          <li><a class="text-muted" href="#">김혜원</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
